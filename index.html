@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+</head>
+
+<body>
+    <nav id="navbar">
+        <button class="signup"><a href="signup.html">Sign Up</a></button>
+        <ul>
+            <li class="navButton"><a href="contact.html">Contact</a></li>
+            <li class="navButton"><a href="news.html">News</a></li>
+            <li class="navButton"><a href="projects.html">Projects</a></li>
+            <li class="navButton"><a href="index.html">Home</a></li>
+        </ul>
+        <h1 class="title"><a href="index.html">Marine Geology</a></h1>
+    </nav>
+
+    <center>
+        <div class="cover" style="background-image: url('huy.jpg');">
+            <div class="open">
+                <h1 class="uwu">Explore the Depths of Marine Geology</h1>
+                <p style="font-size: 20px;">
+                    Delve into the geological processes and features of the ocean<br>
+                    and explore the latest research and discoveries in<br>
+                    marine geology to gain a deeper understanding of these</br>
+                    fascinating phenomena.</p>
+                <button class="more" onclick="scrollToContent()">Learn More</button>
+            </div>
+        </div>
+
+        <div class="overview" id="overview">
+            <h1>What Is Marine Geology?</h1>
+            <img src="huyy.jpg">
+            <p style="font-size: 19px;">
+                <b>Marine geology</b> is the study of the structure and composition of the ocean floor. It involves
+                examining<br>
+                underwater geological features such as seafloor spreading, volcanic activity, and hydrothermal
+                vents.<br>
+                This field of science provides insights into plate tectonics, sediment processes, and ocean basin
+                formation.<br>
+                Marine geologists use techniques like seismic surveying and submersible exploration to collect data.
+                By<br>
+                studying marine geology, scientists gain insights into past climate changes, natural hazards, and
+                the<br>
+                evolution of marine life.
+            </p> </br>
+
+            <p style="font-size: 20px;"> <b>Importance</b></p>
+            <p style="font-size: 19px;">
+                Marine geology is crucial for understanding the Earth's geological history and plate tectonics,
+                providing<br>
+                insights into natural hazards like tsunamis and earthquakes. It helps identify underwater mineral
+                resources<br>
+                and informs environmental conservation efforts. This field also aids in predicting and mitigating the
+                impacts<br>
+                of climate change on marine ecosystems.
+            </p>
+        </div>
+
+        <div class="research">
+            <h2>Marine Geology: Key Areas</h2>
+            <div class="first"><a
+                    href="https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-floor-features">
+                    <img src="pt1.jpg">
+                    <img src="pt2.jpg">
+                    <img src="pt3.jpg">
+                    <h3> Plate Tectonics </h3>
+                    <p> Plate tectonics in marine geology studies the movement and<br>
+                        interaction of Earth's lithospheric plates beneath the oceans.<br>
+                        This includes understanding mid-ocean ridges, subduction zones,<br>
+                        and transform faults, which are crucial for comprehending the<br>
+                        dynamics of seafloor spreading and continental drift.</p>
+                </a>
+            </div>
+
+            <div class="sec"><a href="https://en.wikipedia.org/wiki/Paleoclimatology">
+                    <img src="pc1.jpg">
+                    <img src="pc2.jpg">
+                    <img src="pc3.jpg">
+                    <h3> Paleoclimatology </h3>
+                    <p> Paleoclimatology involves analyzing marine sediments and<br>
+                        microfossils to reconstruct past oceanic and atmospheric conditions.<br>
+                        This helps scientists understand historical climate change, ocean<br>
+                        circulation patterns, and how they have influenced marine and<br>
+                        terrestrial ecosystems over geological time scales.</p>
+                </a>
+            </div>
+
+            <div class="third"><a href="https://en.wikipedia.org/wiki/Marine_sediment">
+                    <img src="ms1.jpg">
+                    <img src="ms2.jpg">
+                    <img src="ms3.jpg">
+                    <h3> Marine Sediments </h3>
+                    <p> Marine Sediments focus on the origin, transportation, and<br>
+                        deposition of sediments on the ocean floor. This includes<br>
+                        tudying sediment layers to interpret depositional environments,<br>
+                        past ocean conditions, and the processes that shape marine<br>
+                        landscapes, such as turbidity currents and sediment transport.</p>
+
+                </a>
+            </div>
+
+            <div class="fourth"><a href="https://en.wikipedia.org/wiki/Hydrothermal_vent">
+                    <img src="hv1.jpg">
+                    <img src="hv2.jpg">
+                    <img src="hv3.jpg">
+                    <h3> Hydrothermal Vent Systems </h3>
+                    <p> Research on hydrothermal vents examines the ecosystems and<br>
+                        geological processes at these vents. Studies explore vent<br>
+                        structure formation, vent fluid chemistry, and extremophiles,<br>
+                        offering insights into life's origins and mineral resources<br>
+                        and the extreme conditions under which life can thrive.</p>
+
+                </a>
+            </div>
+
+            <div class="FAQS">
+                <h2>Frequently Asked Questions</h2>
+                <div class="num1">
+                    <h3>What tools and techniques are used in marine<br>
+                        geology research?</h3>
+                    <p> Marine geologists use tools such as sonar mapping,<br>
+                        sediment coring, remotely operated vehicles (ROVs),<br>
+                        and chemical analysis to study the ocean floor and<br>
+                        its processes.</p> 
+                </div>
+
+                <div class="num2">
+                    <h3>How does marine geology contribute to natural<br>
+                        hazard assessment?</h3>
+                    <p> By studying the geology of the ocean floor, marine<br>
+                        geologists can assess the risk of tsunamis,<br>
+                        earthquakes, and underwater landslides, contributing<br>
+                        to hazard mitigation efforts.</p>
+                </div>
+            
+                <div class="num3">
+                    <h3>How does climate change affect marine<br>
+                        geology?</h3>
+                    <p> Climate change can alter sea levels, ocean <br>
+                        temperatures, and sedimentation rates, impacting<br>
+                        coastal erosion, marine ecosystems, and geological<br>
+                        processes.</p>
+                </div>
+            </div>
+        </div> 
+
+    <script>
+        //For the smooth scrolling effect on the navbar when button is clicked
+        function scrollToContent() {
+            document.getElementById('overview').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        window.onscroll = function () {
+            var navbar = document.getElementById("navbar");
+            if (window.scrollY > 50) {
+                navbar.classList.add("scrolled");
+            } else {
+                navbar.classList.remove("scrolled");
+            }
+        };
+    </script>
+    </body>
+
+<style>
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'League Spartan', sans-serif;
+
+    }
+
+    nav {
+        width: 100%;
+        overflow: none;
+        padding: 5px;
+        background-color: #E6FFF8;
+        position: fixed;
+        top: 0;
+        padding-top: 1px;
+        transition: 0.3s ease-in-out;
+        z-index: 1;
+
+    }
+
+    nav.scrolled {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .navButton {
+        list-style-type: none;
+        float: right;
+        margin-right: 40px;
+        padding-top: 20px;
+        font-family: 'League Spartan', sans-serif;
+
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+    nav ul li {
+        position: relative;
+    }
+
+    nav ul li::after {
+        content: '';
+        height: 2px;
+        width: 0%;
+        margin: auto;
+        background-color: rgb(77, 92, 124);
+        transition: 0.5s;
+        display: block;
+    }
+
+    nav ul li:hover::after {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 30px;
+        color: #5c403e;
+        margin-left: 50px;
+        font-family: 'League Spartan', sans-serif;
+    }
+
+    .cover {
+        background-size: cover;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-top: 70px;
+    }
+
+    .signup {
+        float: inline-end;
+        margin-top: 26px;
+        margin-right: 33px;
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
+        background-color: #e6fff800;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 16px;
+    }
+
+    .signup:hover {
+        transition: 0.2s;
+        background-color: #acacac;
+        color: #474747;
+    }
+
+    .open {
+        padding-bottom: 350px;
+    }
+
+    .more {
+        color: #382321;
+        border-radius: 50px;
+        border: none;
+        padding: 20px;
+        font-weight: bold;
+        margin: 20px;
+        font-size: 15px;
+        background-color: rgba(127, 162, 228, 0.603);
+        transition: transform 0.2s;
+        cursor: pointer;
+    }
+
+    .more:hover {
+        transition: 0.3s;
+        transform: scale(1.05);
+        background-color: rgba(25, 73, 161, 0.603);
+    }
+
+    .overview {
+        padding: 20px;
+        padding-top: 75px;
+    }
+
+    img {
+        height: 400px;
+        border-radius: 25px;
+    }
+
+    .research {
+        margin-top: 4%;
+    }
+
+    .first,
+    .sec,
+    .third,
+    .fourth {
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .first:hover,
+    .sec:hover,
+    .third:hover,
+    .fourth:hover {
+        background-color: #25767c94;
+        transform: scale(1.03);
+        font-weight: bold;
+    }
+
+    .first {
+        background-color: #8fcebd94;
+        width: fit-content;
+        border-radius: 40px;
+        float: left;
+        margin-left: 7%;
+        padding-top: 35px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: Montserrat;
+        color: black;
+        margin-top: 25px;
+        margin-bottom: 8px;
+
+    }
+
+    .first p {
+        font-size: 15px;
+    }
+
+    .first img {
+        width: 150px;
+        height: 150px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        border-radius: 30px;
+
+    }
+
+    .sec {
+        background-color: #8fcebd94;
+        width: fit-content;
+        border-radius: 40px;
+        float: left;
+        margin-left: 5%;
+        padding-top: 35px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: Montserrat;
+        color: black;
+        margin-top: 25px;
+        margin-bottom: 8px;
+    }
+
+    .sec p {
+        font-size: 15px;
+    }
+
+
+    .sec img {
+        width: 150px;
+        height: 150px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        border-radius: 30px;
+    }
+
+    .fourth {
+        background-color: #8fcebd94;
+        width: fit-content;
+        border-radius: 40px;
+        float: left;
+        margin-left: 5%;
+        padding-top: 35px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: Montserrat;
+        color: black;
+        margin-top: 25px;
+        margin-bottom: 8px;
+
+    }
+
+    .fourth p {
+        font-size: 15px;
+    }
+
+    .fourth img {
+        width: 150px;
+        height: 150px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        border-radius: 30px;
+    }
+
+    .third {
+        background-color: #8fcebd94;
+        width: fit-content;
+        border-radius: 40px;
+        float: left;
+        margin-left: 7%;
+        padding-top: 35px;
+        padding-bottom: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-family: Montserrat;
+        color: black;
+        margin-top: 25px;
+        margin-bottom: 8px;
+    }
+
+    .third p {
+        font-size: 15px;
+    }
+
+    .third img {
+        width: 150px;
+        height: 150px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        border-radius: 30px;
+    }
+
+    .FAQS {
+        margin-top: 5%;
+        float: inline-end;
+        margin-bottom: 2%;
+        width: 100%;
+    }
+
+    .content,
+    p {
+        font-size: 17px;
+    }
+
+    .FAQS h2 {
+        margin-bottom: 50px;
+    }
+
+    .num1,
+    .num2,
+    .num3,
+    .num4,
+    .num5,
+    .num6 {
+        transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, color 0.3s ease-in-out;
+        box-shadow: 7px 7px 7px rgba(5, 35, 46, 0.623);
+        border: 2px double rgba(46, 49, 80, 0.801);
+    }
+
+    .num1:hover,
+    .num2:hover,
+    .num3:hover,
+    .num4:hover,
+    .num5:hover,
+    .num6:hover {
+        transform: scale(1.03);
+
+    }
+
+    .num1 {
+        padding: 10px;
+        float: left;
+        background-color: rgba(97, 138, 155, 0.274);
+        border-radius: 30px;
+        margin-left: 4%;
+        margin-bottom: 3%;
+    }
+
+    .num2 {
+        padding: 10px;
+        float: left;
+        margin-left: 3%;
+        background-color: rgba(97, 138, 155, 0.274);
+        border-radius: 30px;
+        margin-bottom: 3%;
+    }
+
+    .num3 {
+        padding: 10px;
+        float: left;
+        margin-left: 3%;
+        background-color: rgba(97, 138, 155, 0.274);
+        border-radius: 30px;
+        margin-bottom: 3%;
+    }
+</style>
+
+</html>

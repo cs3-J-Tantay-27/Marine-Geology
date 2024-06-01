@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Projects and Studies</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=League Spartan' rel='stylesheet'>
+</head>
+
+<body>
+    <nav id="navbar">
+        <button class="signup"><a href="signup.html">Sign Up</a></button>
+        <ul>
+            <li class="navButton"><a href="contact.html">Contact</a></li>
+            <li class="navButton"><a href="news.html">News</a></li>
+            <li class="navButton"><a href="projects.html">Projects</a></li>
+            <li class="navButton"><a href="index.html">Home</a></li>
+        </ul>
+        <h1 class="title"><a href="index.html">Marine Geology</a></h1>
+    </nav>
+
+    <div class="proj">
+        <h2>Projects and Case Studies</h2>
+        <button class="accordion">The Antarctic Circumnavigation Expedition (ACE)</button>
+        <div class="panel hidden">
+            <p>ACE was a research project circumnavigating Antarctica to study its geology, biology, and climate,
+                providing new data on the geological history of Antarctica and its role in global climate systems.</p>
+            <P><a href="https://swisspolar.ch/expeditions/ace/">Learn More</a></p> <!--For accessible sources-->
+        </div>
+
+        <button class="accordion">The Mediterranean Outflow Water (MOW) Project</button>
+        <div class="panel hidden">
+            <p>This project studied the outflow of dense, salty water from the Mediterranean Sea into the Atlantic
+                Ocean, revealing impacts on ocean circulation, sediment transport, and climate patterns.</p>
+            <P><a href="https://cordis.europa.eu/project/id/101104537">Learn More</a></p> <!--For accessible sources-->
+        </div>
+
+        <button class="accordion">Mariana Trench Exploration</button>
+        <div class="panel hidden">
+            <p>Studies of the deepest part of the world's oceans, including the DEEPSEA CHALLENGE expedition led by
+                James Cameron, provided valuable data on the geology and biology of the trench.</p>
+            <P><a href="https://www.nationalgeographic.com/adventure/article/120325-james-cameron-mariana-trench-challenger-deepest-returns-science-sub ">Learn
+                    More</a></p> <!--For accessible sources-->
+        </div>
+
+        <button class="accordion">Integrated Ocean Drilling Program (IODP)</button>
+        <div class="panel hidden">
+            <p>As the successor to the ODP, the IODP focused on scientific drilling of the ocean floor to understand
+                Earth's history and structure. Key projects included Chikyu Drilling, which explored subduction zones,
+                and Expedition 364, which studied the Chicxulub impact crater to understand the effects of the asteroid
+                impact linked to the extinction of the dinosaurs.</p>
+            <P><a href="https://en.wikipedia.org/wiki/Integrated_Ocean_Drilling_Program">Learn More</a></p> <!--For accessible sources-->
+        </div>
+
+        <button class="accordion">Seafloor Hydrothermal Vent Systems</button>
+        <div class="panel hidden">
+            <p> Investigations of hydrothermal vents and their unique ecosystems revealed extremophiles, organisms that
+                thrive in extreme conditions, which has implications for understanding life's limits and the origins of
+                life on Earth.</p>
+            <P><a href="https://www.whoi.edu/know-your-ocean/ocean-topics/how-the-ocean-works/seafloor-below/hydrothermal-vents/ ">Learn
+                    More</a></p> <!--For accessible sources-->
+        </div></br></br></br>
+
+</div>
+    <script>
+        //Javascript for the accordions
+        document.addEventListener("DOMContentLoaded", function () {
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+
+            //To remove the hidden class once the page has fully loaded
+            var panels = document.getElementsByClassName("panel");
+            for (i = 0; i < panels.length; i++) {
+                panels[i].classList.remove("hidden");
+            }
+        });
+    </script>
+</body>   
+
+<style>
+    html,
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        margin: 0;
+        font-family: 'League Spartan', sans-serif;
+        background-color: #E6FFF8;
+    }
+
+    nav {
+        width: 100%;
+        overflow: none;
+        padding: 5px;
+        background-color: #E6FFF8;
+        position: fixed;
+        top: 0;
+        padding-top: 1px;
+        transition: 0.3s ease-in-out;
+        z-index: 1;
+        border-bottom: 1px solid black;
+    }
+
+    .navButton {
+        list-style-type: none;
+        float: right;
+        margin-right: 40px;
+        padding-top: 20px;
+        font-family: 'League Spartan', sans-serif;
+    }
+
+    a {
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+    }
+
+    nav ul li {
+        position: relative;
+    }
+
+    nav ul li::after {
+        content: '';
+        height: 2px;
+        width: 0%;
+        margin: auto;
+        background-color: rgb(77, 92, 124);
+        transition: 0.5s;
+        display: block;
+    }
+
+    nav ul li:hover::after {
+        width: 100%;
+    }
+
+    .title {
+        font-size: 30px;
+        color: #5c403e;
+        margin-left: 50px;
+        font-family: 'League Spartan', sans-serif;
+    }
+
+    .signup {
+        float: inline-end;
+        margin-top: 26px;
+        margin-right: 33px;
+        border-radius: 10px;
+        border: none;
+        padding: 10px;
+        background-color: #e6fff800;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 16px;
+    }
+
+    .signup:hover {
+        transition: 0.2s;
+        background-color: #acacac;
+        color: #474747;
+    }
+
+    .proj {
+        margin-top: 5%;
+        padding-top: 20px;
+        text-align: center;
+    }
+
+    .accordion {
+        background-color: #d2e3fdb6;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+        font-size: 15px;
+        margin-top: 2%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+
+    .active,
+    .accordion:hover {
+        background-color: #a4bce0b6;
+    }
+
+    .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: #d2e3fdb6;
+        ;
+        overflow: hidden;
+    }
+
+    .panel.hidden {
+        display: none;
+    }
+
+    .panel p+p a {
+        color: blue;
+    }
+</style>
+
+</html>
